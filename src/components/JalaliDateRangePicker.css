@@ -1,0 +1,181 @@
+.jalali-picker {
+  width: min(100%, 380px);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgb(15 23 42 / 12%);
+  font-family: Inter, Vazirmatn, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111827;
+}
+
+.jalali-picker__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.jalali-picker__title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.jalali-picker__nav,
+.jalali-picker__button,
+.jalali-picker__day {
+  border: 0;
+  font: inherit;
+}
+
+.jalali-picker__nav {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #334155;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.jalali-picker__nav:hover {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.jalali-picker__weekdays,
+.jalali-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.jalali-picker__weekdays {
+  padding: 16px 0 10px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.jalali-picker__day {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 999px;
+  background: transparent;
+  color: #111827;
+  cursor: pointer;
+  transition: background 140ms ease, color 140ms ease, transform 140ms ease;
+}
+
+.jalali-picker__day:hover:not(:disabled) {
+  background: #0ea5e9;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.jalali-picker__day--outside {
+  color: #cbd5e1;
+  cursor: default;
+}
+
+.jalali-picker__day--today {
+  color: #0284c7;
+  font-weight: 800;
+}
+
+.jalali-picker__day--selected,
+.jalali-picker__day--selected:hover:not(:disabled) {
+  background: #0284c7;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.jalali-picker__day--in-range {
+  background: #e0f2fe;
+  color: #075985;
+}
+
+.jalali-picker__day--disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.jalali-picker__summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #eef2f7;
+}
+
+.jalali-picker__summary div {
+  display: grid;
+  gap: 3px;
+  min-height: 46px;
+}
+
+.jalali-picker__summary span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.jalali-picker__summary strong {
+  font-size: 14px;
+}
+
+.jalali-picker__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.jalali-picker__button {
+  min-height: 38px;
+  flex: 1;
+  border-radius: 12px;
+  background: #f1f5f9;
+  color: #334155;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.jalali-picker__button:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.jalali-picker__button--primary {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.jalali-picker__button--primary:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.jalali-picker__button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 420px) {
+  .jalali-picker {
+    border-radius: 16px;
+    padding: 12px;
+  }
+
+  .jalali-picker__weekdays,
+  .jalali-picker__grid {
+    gap: 5px;
+  }
+
+  .jalali-picker__day {
+    height: 36px;
+  }
+}

@@ -168,23 +168,6 @@ The original implementation worked in the ZhinTour app, but it depended on proje
 - Adding a demo app and documentation
 - Improving accessibility with button semantics and ARIA labels
 
-## Suggested GitHub repository name
-
-Good options:
-
-- `jalali-date-range-picker`
-- `react-jalali-date-range-picker`
-- `persian-calendar-range-picker`
-- `react-persian-booking-calendar`
-
-For portfolio positioning, `react-jalali-date-range-picker` is probably the strongest because it is clear, searchable, and technology-specific.
-
-## Portfolio description
-
-> A reusable React + TypeScript Jalali date range picker extracted from a production travel marketplace use case and rebuilt as a standalone open-source component. Supports RTL layout, Persian labels, date-range selection, single-date mode, disabled dates, hover previews, and clean controlled state management.
-
-## Recruiter-facing value
-
 This project demonstrates:
 
 - Product engineering experience from a real marketplace use case

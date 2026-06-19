@@ -6,7 +6,7 @@ This project is based on a calendar/date-range selector originally created for t
 
 ## Why this project exists
 
-The original calendar was built inside a large production marketplace, where it was used for travel booking and search flows. This repository extracts the core idea and improves it into a public, recruiter-friendly example that can be run independently without private application code.
+The original calendar was built inside a large production marketplace, where it was used for travel booking and search flows. This repository extracts the core idea and improves it into a public example that can be run independently without private application code.
 
 ## Features
 
